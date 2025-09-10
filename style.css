@@ -1,65 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Iosevka:wght@400;500&display=swap');
 :root {
-	--font: "Iosevka", monospace;
-  --background: #282828;
-  --background_alt: #1d2021;
-  --foreground: #ebdbb2;
-  --red: #fb4934;
-  --green: #b8bb26;
-  --yellow: #fabd2f;
-  --blue: #83a598;
-  --purple: #d3869b;
-  --aqua: #8ec07c;
-  --orange: #fe8019;
-  --accent: var(--green);
-  --grid_columns: 2;
-  --grid_rows: 1;
+    --font: "Iosevka", monospace;
+    --background: #282828;
+    --background_alt: #1d2021;
+    --foreground: #ebdbb2;
+    --red: #fb4934;
+    --green: #b8bb26;
+    --yellow: #fabd2f;
+    --blue: #83a598;
+    --purple: #d3869b;
+    --aqua: #8ec07c;
+    --orange: #fe8019;
+    --accent: var(--green);
+    --grid_columns: 2;
+    --grid_rows: 1;
 }
 * {
-	font-family: var(--font);
+    font-family: var(--font);
 }
 body {
-  display: grid;
-  margin: auto;
-  justify-content: center;
-  background-color: var(--background);
-  height: 100vh;
+    display: grid;
+    margin: auto;
+    justify-content: center;
+    background-color: var(--background);
+    height: 100vh;
 }
 h1 {
-  text-align: center;
-  margin-top: auto;
-  font-size: 3em;
-  color: var(--foreground);
+    text-align: center;
+    margin-top: auto;
+    font-size: 3em;
+    color: var(--foreground);
 }
 p {
-  text-align: center;
-  margin: auto;
-  color: var(--foreground);
-  background: var(--background);
+    text-align: center;
+    margin: auto;
+    color: var(--foreground);
+    background: var(--background);
 }
 h2 {
-  text-align: center;
-  margin-bottom: auto;
-  font-size: 2em;
-  color: var(--foreground);
+    text-align: center;
+    margin-bottom: auto;
+    font-size: 2em;
+    color: var(--foreground);
 }
 main {
-	display: grid;
-  justify-content: center;
-  margin: auto;
-	width: 140px;
-	gap: 5%;
-	grid-template-columns: repeat(var(--grid_columns), minmax(180px, 1fr));
-	grid-template-rows: repeat(var(--grid_rows), minmax(80px, 1fr));
+    display: grid;
+    justify-content: center;
+    margin: auto;
+    width: 140px;
+    gap: 5%;
+    grid-template-columns: repeat(var(--grid_columns), minmax(180px, 1fr));
+    grid-template-rows: repeat(var(--grid_rows), minmax(80px, 1fr));
 }
 a {
   display: flex;
 	justify-content: center;
 	align-items: center;
-  padding: auto;
+    padding: auto;
 	text-decoration: none;
 	font-size: 1.4em;
-	background-color: var(--background_alt);
+	background-color: var(--background);
 	color: var(--foreground);
 }
 a:hover {
