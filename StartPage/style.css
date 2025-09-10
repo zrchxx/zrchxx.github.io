@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Iosevka:wght@400;500&display=swap');
+:root {
+	--font: "Iosevka", monospace;
+	--background: #191919;
+	--background_alt: #292929;
+	--foreground: #BCC4C9;
+  --red: #D18F8F;
+  --green: #BEE1AD;
+  --blue: #A5B4CB;
+  --orange: #CEB188;
+  --violet: #C49EC4;
+  --accent: var(--blue);
+	--grid_columns: 3;
+	--grid_rows: 2;
+}
+* {
+	font-family: var(--font);
+}
+body {
+  display: grid;
+  margin: auto;
+  background-color: var(--background);
+  height: 100vh;
+}
+a {
+  text-align: center;
+  margin-bottom: auto;
+  text-decoration: none;
+  font-size: 2em;
+  color: var(--foreground);
+}
+main {
+	display: grid;
+  justify-content: center;
+  margin: auto;
+	width: 220px;
+	gap: 5%;
+	grid-template-columns: repeat(var(--grid_columns), minmax(220px, 1fr));
+	grid-template-rows: repeat(var(--grid_rows), minmax(110px, 1fr));
+}
+main > a {
+  display: flex;
+  text-align: center;
+	justify-content: center;
+	align-items: center;
+  padding: auto;
+	text-decoration: none;
+  padding: 40px;
+	font-size: 1.4em;
+	background-color: var(--background_alt);
+	color: var(--foreground);
+}
+main > a:hover {
+	background-color: var(--accent);
+	color: var(--background);
+}
