@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Iosevka:wght@400;500&display=swap');
 :root {
 	--font: "Iosevka", monospace;
-  --background: #191919;
-  --background_alt: #292929;
-  --foreground: #BCC4C9;
-  --red: #D18F8F;
-  --green: #BEE1AD;
-  --blue: #A5B4CB;
-  --orange: #CEB188;
-  --violet: #C49EC4;
-  --accent: var(--blue);
+  --background: #282828;
+  --background_alt: #1d2021;
+  --foreground: #ebdbb2;
+  --red: #fb4934;
+  --green: #b8bb26;
+  --yellow: #fabd2f;
+  --blue: #83a598;
+  --purple: #d3869b;
+  --aqua: #8ec07c;
+  --orange: #fe8019;
+  --accent: var(--green);
   --grid_columns: 2;
   --grid_rows: 1;
 }
